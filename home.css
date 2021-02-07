@@ -1,10 +1,92 @@
-main {
-  padding-top:10px
-}
 
 #welcome {
-  background-color: pink;
-  width:100%;
-  padding-bottom:50px;
-  color :red;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+#flower {
+  width: 100%;
+  filter:brightness(80%);
+}
+
+#welcome p {
+  position: absolute;
+  color: white;
+  font-family: cursive;
+  background-color: transparent;
+  font-family: cursive;
+}
+
+#welcome p:nth-child(2) {
+  top: 30px;
+  font-size: 60px;
+  left: 80px;
+}
+
+#welcome p:nth-child(3) {
+  top: 110px;
+  font-size: 50px;
+  left: 80px;
+}
+
+#welcome p:nth-child(4) {
+  top: 170px;
+  font-size: 50px;
+  left: 80px;
+}
+
+#welcome p:nth-child(5) {
+  bottom: 60px;
+  right: 20px;
+  font-size: 20px;
+}
+
+#about {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/ESO-VLT-Laser-phot-33a-07.jpg/1200px-ESO-VLT-Laser-phot-33a-07.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter:brightness(110%);
+}
+
+#about  * {
+  background-color: transparent;
+}
+
+#about h1 {
+  font-size: 50px;
+  color: white;
+  margin-left: 80px;
+}
+
+#about > ul {
+  list-style-type: none;
+  font-size: 20px;
+  margin-left: 130px;
+
+}
+
+#about > ul > li {
+  margin-top: 10px;
+}
+
+#about a {
+  text-decoration: none;
+}
+
+#about a:hover{
+  color: rgb(231, 156, 156);
+}
+
+#about > p{
+  text-align: right;
+  margin-right: 20px;
+}
+
+.quote {
+  font-size: 20px;
+  color: white;
+  font-family: cursive;
 }

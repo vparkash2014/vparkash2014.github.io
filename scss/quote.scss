@@ -1,0 +1,18 @@
+@use 'palette';
+
+.quote {
+  font-size: 20px;
+  color: palette.$background;
+  font-family: cursive;
+  text-align: right;
+  margin-right: 5%;
+
+  &--dark {
+    margin-top: 20px;
+    color: palette.$header-secondary;
+  }
+
+  &--grid {
+    grid-column-start: span 2;
+  }
+}

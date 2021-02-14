@@ -1,0 +1,25 @@
+.hdr {
+  width: inherit;
+  height: 600px;
+  background-color: #5C5F58;
+  background-image: url(../images/hk.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hdr__txt {
+  padding-top: 2.5%;
+  padding-left: 20%;
+  color: #B73225;
+}
+.hdr__name {
+  display: inline-block;
+  font-size: 50px;
+  border-bottom: 3px solid #9A2A2A;
+}
+.hdr__title {
+  font-size: 20px;
+}
+.hdr__quote {
+  display: inline-block;
+}

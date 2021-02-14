@@ -1,0 +1,28 @@
+@use 'palette';
+
+.section {
+  &__title {
+    color: palette.$text-primary;
+    font-size: 50px;
+  }
+
+  &__secondary {
+    color: palette.$header-primary;
+  }
+
+  &__text { 
+    color: palette.$header-secondary;
+
+    a {
+      color: #393a38;
+      font-family: inherit;
+
+      &:hover {
+        color:palette.$text-secondary;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  }
+
+}

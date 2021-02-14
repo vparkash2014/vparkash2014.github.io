@@ -1,0 +1,26 @@
+@use 'palette';
+
+.about {
+  background-color: palette.$background;
+  padding-top: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 30px;
+
+  &__grid  {
+    grid-template-columns: 60% auto;
+
+  }
+
+  &__txt {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  &__img {
+    border-radius: 50%;
+    width: 100%;
+    justify-self: center;
+  }
+
+}

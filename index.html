@@ -3,25 +3,179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
   <script src="https://kit.fontawesome.com/12f3470604.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/section.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/flex.css">
+  <link rel="stylesheet" href="css/quote.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="css/background.css">
+  <link rel="stylesheet" href="css/contact.css">
+
   <title>Vaishali's Portfolio</title>
 </head>
 <body>
-  <header>
-    <div id="header-content">
-      <h1>Vaishali Parkash</h1>
-      <p>Software Developer (in training)</p>
+  <nav class="navbar navbar-expand-md nav--bg sticky-top">
+    <span class="navbar-brand nav--primary mb-0 h1"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars hamburger"></i></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active nav--secondary" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav--secondary" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav--secondary" href="#project">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav--secondary" href="#background">Background and Networks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav--secondary" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
-    <a href="#about" id="scroll-down"><i class="fas fa-angle-double-down"></i></a>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#skills">Abilities</a></li>
-      <li><a href="#project">Projects</a></li>
-      <li><a href="#Contact">Contact</a></li>
-    </ul>
   </nav>
+
+  <header class= "hdr flex flex-wrap flex--col flex--space-btw">
+    <div class="hdr__txt">
+      <h1 class="hdr__name">Vaishali Parkash</h1>
+      <p class="hdr__title">Software Developer (in training)</p>
+    </div>
+    <p class="quote hdr__quote">“We are all stories in the end, just make it a good one eh?” - Doctor Who</p>
+  </header>
+
+  <main>
+    <div class="section" id="about">
+      <div class=" about about__grid grid">
+        <div class="grid__cell">
+          <h1 class="section__title">About Me</h1>
+          <h3 class="section__secondary">Hi All, I'm Vaishali.</h3>
+          <p class="section__text">
+            I was born in India, grew up in New York was a Fulbright Fellow in Germany and completed my PhD in Melbourne, Australia, where I'm currently located. I'm always seeking new and exciting experiences and opportunities to continue to learn. 
+          </p>
+          <p class="section__text">
+            Currently, I'm a software developer (in-training) at _nology. I am passionate about coding and excited to kick-start my tech career. After _nology, I am looking for a position with a company that shares the same values as mine; hard work and community. I am excited to grow professionally and continue to learn from the best in the industry. 
+          </p>
+          <p class="section__text">
+            Before the _nology, I was a PhD student in observational astrophysics, on a mission to understand how galaxies evolve. You can check out my research projects and python codes <a href="#">Here</a>. Even though research was my main focus during my years at university, my true passion lied in mentoring and inspiring my students to fulfil their dreams in science. 
+          </p>
+          <p class="section__text">Outside of work, I am an urban-gardener, traveler and cyclist. </p>
+        </div>
+        <div class="grid__cell flex flex--center flex--align-center ">
+          <img class="about__img" src="images/me.jpg">
+        </div>
+        <p class="quote quote--dark quote--grid">"You cannot change what you are, only what you do." ― Philip Pullman</p>
+      </div>
+    </div>
+
+    <div class="section" id="skills">
+      <div class="skills">
+        <h1 class="section__title"> What can I do? </h1>
+        <div class="skills__icon grid">
+          <div class="">
+            <i class="fab fa-html5" aria-hidden="true"></i>
+            <p class="skills__icon--font">HTML 5</p>
+          </div>
+          <div>
+            <i class="fab fa-css3-alt" aria-hidden="true"></i>
+            <p class="skills__icon--font">CSS 3</p>
+          </div>
+          <div>
+            <i class="fab fa-sass" aria-hidden="true"></i>
+            <p class="skills__icon--font">SASS</p>
+          </div>
+          <div>
+            <i class="fab fa-js" aria-hidden="true"></i>
+            <p class="skills__icon--font">JavaScript</p>
+          </div>
+          <div>
+            <i class="fab fa-python" aria-hidden="true"></i>
+            <p class="skills__icon--font">Python</p>
+          </div>
+          <div>
+            <i class="fab fa-git" aria-hidden="true"></i>
+            <p class="skills__icon--font">Git</p>
+          </div>
+          <div>
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <p class="skills__icon--font">GitHub</p>
+          </div>
+          <div>
+            <i class="fas fa-terminal" aria-hidden="true"></i>
+            <p class="skills__icon--font">Terminal (bash & csh shell)</p>
+          </div>
+        </div>
+        <p class="quote quote--dark">“The important thing is to never stop questioning [or learning].” – Albert Einstein</p>
+      </div>
+    </div>
+
+    <div class="section" id="project">
+      <div class="project">
+        <h1 class="section__title"> Projects </h1>
+        <h3 class="section__secondary">Here's some of my recent work.</h3>
+        <div class="grid">
+
+        </div>
+        <p class="quote quote--dark">"It does not take much strength to do things, but it requires a great deal of strength to decide what to do." ― Elbert Hubbard</p>
+      </div>
+    </div>
+
+    <div class="section" id="background">
+      <div class="background">
+        <h1 class="section__title"> Background & Networks </h1>
+        <div class="grid background__grid">  
+          <div>
+            <i class="fas fa-globe-asia"></i>
+            <h6 class="section__secondary">Monash University </h6>
+            <p class="section__text">In 2019, I completed my PhD thesis in Observational Astrophysics. My research focused on the neutral hydrogen content and star formation properties of local galaxies to gain insight on galaxy evolution. As part of international collaboration, I successful written six proposals to obtain time on professional telescopes and published two first-author scientific papers. My thesis titled "Star formation within nearby galaxies."  </p>
+          </div>
+          <div>
+            <i class="fas fa-globe-europe"></i>
+            <h6 class="section__secondary">Fulbright Program</h6>
+            <p class="section__text">In 2015, I was recieved an Fulbright Student Fellowship. I spent 10 months between University of Göttingen, Germany and Aarhus University, Denmark to study exoplanets. I developed a Python pipeline to reduce and analyze the observations of possible transits of extrasolar planets.</p>
+          </div>
+          <div>
+            <i class="fas fa-globe-americas"></i>
+            <h6 class="section__secondary">Union College</h6>
+            <p class="section__text">In 2014, I graduated with a BSc with Departmental Honors in Physics with minors in Mathematics and Astrophysics. As part of my study aboard program, I interned at CTIO in Chile to study observation astronomy and galaxy evolution. Thesis Title: Comparing Stellar Population of Galaxies across the Hubble Sequence: Reduction of PISCES Near-Infrared Images   </p>
+          </div>
+        </div>
+        <p class="quote quote--dark quote--grid">"We are only as strong as we are united, as weak as we are divided." ― Albus Dumbledore</p>
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <div class="contact">
+        <h1 class="section__title">Get in touch</h1>
+        <p class="section__text">To have a chat, please drop me an email at vparkash@gmail.com</p>
+        <p class="section__text">You can downlad my CV here</p>
+        <div class="section__text">
+          <a target="_blank" href="https://www.linkedin.com/in/vparkash/"><i class="fab fa-github"></i></a>
+          <a target="_blank" href="https://github.com/vparkash2014"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+
 </body>
 </html>

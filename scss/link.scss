@@ -1,0 +1,9 @@
+@use 'palette';
+
+.link {
+  color: palette.$text-primary;
+  
+  &:hover {
+    color:palette.$text-secondary;
+  }
+}

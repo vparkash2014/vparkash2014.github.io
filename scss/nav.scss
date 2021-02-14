@@ -1,0 +1,25 @@
+@use 'palette';
+
+.nav {
+  &--bg {
+    background-color: palette.$background;
+  }
+
+  &--primary{
+    color: palette.$header-primary;
+  }
+
+  &--secondary{
+    color: palette.$text-primary;
+
+    &:hover {
+      color:palette.$text-secondary;
+    }
+
+    &:active {
+      font-weight: bold;
+    }
+  }
+
+
+}

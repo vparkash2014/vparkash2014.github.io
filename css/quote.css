@@ -1,0 +1,14 @@
+.quote {
+  font-size: 20px;
+  color: #DCE1E3;
+  font-family: cursive;
+  text-align: right;
+  margin-right: 5%;
+}
+.quote--dark {
+  margin-top: 20px;
+  color: #5C5F58;
+}
+.quote--grid {
+  grid-column-start: span 2;
+}

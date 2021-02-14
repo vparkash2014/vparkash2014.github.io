@@ -1,0 +1,12 @@
+.contact {
+  background-color: #DCE1E3;
+  padding-top: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.contact i {
+  font-size: 35px;
+  margin: 10px;
+}

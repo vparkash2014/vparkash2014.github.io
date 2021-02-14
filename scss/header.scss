@@ -1,0 +1,36 @@
+@use 'palette';
+
+.hdr {
+  width: inherit;
+  height: 600px;
+  background-color: palette.$header-secondary;
+  background-image: url(../images/hk.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // filter: grayscale(50%); ;
+
+
+  &__txt {
+    padding-top: 2.5%;
+    padding-left: 20%;
+    color: palette.$text-primary;
+  }
+
+  &__name {
+    display: inline-block;
+    font-size: 50px;
+    border-bottom: 3px solid palette.$header-primary;
+  }
+
+  &__title {
+    font-size: 20px;
+  }
+
+  &__quote {
+    display: inline-block;
+  }
+
+
+
+}

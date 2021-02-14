@@ -1,0 +1,5 @@
+@mixin mod-position($name, $mod, $value) {
+  &--#{$name} {
+    #{$mod}: $value;
+  }
+}

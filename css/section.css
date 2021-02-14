@@ -1,0 +1,19 @@
+.section__title {
+  color: #B73225;
+  font-size: 50px;
+}
+.section__secondary {
+  color: #9A2A2A;
+}
+.section__text {
+  color: #5C5F58;
+}
+.section__text a {
+  color: #393a38;
+  font-family: inherit;
+}
+.section__text a:hover {
+  color: #004E7C;
+  text-decoration: none;
+  font-weight: bold;
+}

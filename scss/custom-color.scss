@@ -1,0 +1,12 @@
+@use 'palette';
+
+.custom {
+
+  &--color-bg {
+    background-color: palette.$background;
+  }
+
+  &--color-primary {
+    color: palette.$header-primary;
+  }
+}

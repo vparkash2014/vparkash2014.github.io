@@ -1,0 +1,11 @@
+@use 'palette';
+
+.project {
+  background-color: palette.$background;
+  padding-top: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 30px;
+  text-align: center;
+
+}

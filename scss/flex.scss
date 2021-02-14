@@ -1,0 +1,15 @@
+@use 'base';
+
+.flex {
+  display: flex;
+
+  @include base.mod-position(wrap, flex-wrap, wrap);
+
+  @include base.mod-position(col, flex-direction, column);
+
+  @include base.mod-position(space-btw, justify-content, space-between);
+
+  @include base.mod-position(center, justify-content, center);
+
+  @include base.mod-position(align-center, align-items, center);
+}

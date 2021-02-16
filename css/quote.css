@@ -1,12 +1,13 @@
 .quote {
-  font-size: 20px;
+  font-size: 15px;
   color: #DCE1E3;
-  font-family: cursive;
+  font-style: italic;
   text-align: right;
-  margin-right: 5%;
 }
 .quote--dark {
   margin-top: 20px;
+}
+.quote--dark {
   color: #5C5F58;
 }
 .quote--grid {

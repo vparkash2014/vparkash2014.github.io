@@ -1,6 +1,12 @@
 @use 'palette';
+@use '_base';
 
 .section {
+  padding-top: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 30px;
+
   &__title {
     color: palette.$text-primary;
     font-size: 50px;
@@ -25,4 +31,26 @@
     }
   }
 
+  @include base.mod-position(bg-color, background-color, palette.$background);
+
+  @include base.mod-position(txt-center, text-align, center);
+
+  &__icon {
+    @include base.mod-position(sml, font-size, 35px);
+
+    @include base.mod-position(sml, margin, 10px);
+  };
+
+  &__box{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-right: 4px solid palette.$header-primary;
+    border-left: 4px solid palette.$header-primary;
+  }
+
+  &__img {
+    border-radius: 50%;
+    width: 100%;
+    // justify-self: center;
+  }
 }

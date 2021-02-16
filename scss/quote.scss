@@ -1,18 +1,16 @@
 @use 'palette';
+@use '_base';
 
 .quote {
-  font-size: 20px;
+  font-size: 15px;
   color: palette.$background;
-  font-family: cursive;
+  font-style: italic;
+  // font-family: cursive;
   text-align: right;
-  margin-right: 5%;
 
-  &--dark {
-    margin-top: 20px;
-    color: palette.$header-secondary;
-  }
+  @include base.mod-position(dark, margin-top, 20px);
 
-  &--grid {
-    grid-column-start: span 2;
-  }
+  @include base.mod-position(dark, color, palette.$header-secondary);
+
+  @include base.mod-position(grid, grid-column-start, span 2);
 }
